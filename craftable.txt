@@ -1,0 +1,19 @@
+
+composer create-project laravel/laravel craftable
+php artisan migrate
+php artisan serve
+
+composer require brackets/craftable --ignore-platform-reqs
+composer require --dev brackets/admin-generator --ignore-platform-reqs
+php artisan craftable:install
+
+npm install
+npm run dev
+
+
+
+administrator@brackets.sk
+http://127.0.0.1:8000/
+$table->increments('id');
+$table->boolean('status')->default(false);
+
