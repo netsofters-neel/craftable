@@ -13,3 +13,10 @@ php artisan make:migration create_users_table
 
 // migrate
 php artisan migrate
+
+//crud
+php artisan admin:generate events
+
+
+//re-compile
+npm run dev
