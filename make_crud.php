@@ -20,3 +20,5 @@ php artisan admin:generate events
 
 //re-compile
 npm run dev
+or 
+npm run craftable-dev
