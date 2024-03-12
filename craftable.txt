@@ -9,9 +9,7 @@ php artisan craftable:install
 
 npm install
 npm run dev
-
 or 
-
 npm run craftable-dev
 
 //table schma
@@ -19,6 +17,8 @@ php artisan make:migration create_users_table
 
 
 administrator@brackets.sk
+Admin password is: N8TDaMWXLZ
+
 http://127.0.0.1:8000/
 $table->increments('id');
 $table->boolean('status')->default(false);
