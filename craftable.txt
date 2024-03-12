@@ -10,6 +10,8 @@ php artisan craftable:install
 npm install
 npm run dev
 
+//table schma
+php artisan make:migration create_users_table
 
 
 administrator@brackets.sk
