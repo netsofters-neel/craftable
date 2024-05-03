@@ -1,0 +1,14 @@
+<div class="form-group row align-items-center" :class="{'has-danger': errors.has('status'), 'has-success': fields.status && fields.status.valid }">
+    <label for="status" class="col-form-label text-md-right" :class="isFormLocalized? 'col-md-4' : 'col-md-2'">{{ trans('admin.vehicle.columns.status') }}</label>
+    <div :class="isFormLocalized? 'col-md-4' : 'col-md-9 col-xl-8'">
+        <div class="form-check form-check-inline align-items-center">
+            <input class="form-check-input" style="margin-bottom: 0.5rem;" type="radio" v-model="form.status" name="status" id="statusYes" value="1">
+            <label class="form-check-label" for="statusYes">Yes</label>
+        </div>
+        <div class="form-check form-check-inline align-items-center">
+            <input class="form-check-input" style="margin-bottom: 0.5rem;" type="radio" v-model="form.status" name="status" id="statusNo" value="0">
+            <label class="form-check-label" for="statusNo">No</label>
+        </div>
+        <div v-if="errors.has('status')" class="form-control-feedback form-text" v-cloak>@{{ errors.first('status') }}</div>
+    </div>
+</div>
