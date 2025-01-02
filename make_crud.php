@@ -22,3 +22,6 @@ php artisan admin:generate events
 npm run dev
 or 
 npm run craftable-dev
+
+//change permission
+php artisan permission:cache-reset
